@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container Style */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 43rem;
+}
+
+/* Card Container */
+.card-contact {
+  padding: 10px 20px 40px 20px;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0 black;
+}
+
+/*  */
+h2 {
+  margin: 20px 0 40px 0;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+textarea {
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 200px;
+}
+
+input,
+select {
+  height: 30px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(34, 33, 33);
+}
+
+input:focus {
+  border-color: gray;
+  outline: none;
+}
+
+select {
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid rgb(39, 33, 33);
+}
+
+textarea {
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid rgb(34, 33, 33);
+}
+
+textarea:focus {
+  border-color: gray;
+  outline: none;
+}
+
+label {
+  font-weight: 600;
+  color: rgb(39, 33, 33);
+}
+
+.button-container {
+  display: flex;
+  justify-content: end;
+}
+
+.btn {
+  background-color: #fe4e30;
+  border: none;
+  padding: 6px 13px;
+  margin: 20px 0 0 0;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}

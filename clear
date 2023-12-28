@@ -1,0 +1,120 @@
+[1mdiff --git a/css/style.css b/css/style.css[m
+[1mdeleted file mode 100644[m
+[1mindex e69de29..0000000[m
+[1mdiff --git a/index.html b/index.html[m
+[1mindex 60a4370..4e47fbe 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -1,6 +1,8 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+ <html>[m
+   <head>[m
+[31m-    [m
+[32m+[m
+[32m+[m[32m    <!-- Font Awsome -->[m
+     <link[m
+       rel="stylesheet"[m
+       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"[m
+[36m@@ -9,144 +11,57 @@[m
+       referrerpolicy="no-referrer"[m
+     />[m
+ [m
+[32m+[m[32m    <!-- Google Font -->[m
+     <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,400&family=Quicksand:wght@300;600;700&family=Righteous&display=swap" rel="stylesheet">[m
+ [m
+[31m-    <style>[m
+[31m-[m
+[31m-        /* Body */[m
+[31m-        body{[m
+[31m-            font-family: 'Poppins', sans-serif;[m
+[31m-            background-color: gainsboro;[m
+[31m-        }[m
+[31m-[m
+[31m-        /* Container */[m
+[31m-      .container {[m
+[31m-        width: 600px;[m
+[31m-        box-shadow: 0px 0px 6px 0px rgb(44, 43, 43);[m
+[31m-        padding: 30px 100px;[m
+[31m-        margin: 30px auto;[m
+[31m-        border-radius: 10px;[m
+[31m-        background-color: wheat;[m
+[31m-[m
+[31m-      }[m
+[31m-[m
+[31m-      .title{[m
+[31m-        font-size: 30px;[m
+[31m-      }[m
+[31m-[m
+[31m-      .description{[m
+[31m-        font-size: 15px;[m
+[31m-      }[m
+[31m-[m
+[31m-      p{[m
+[31m-        text-align: justify;[m
+[31m-      }[m
+[31m-[m
+[31m-[m
+[31m-      /* Social Media Style */[m
+[31m-      .social-media{[m
+[31m-        text-align: center;[m
+[31m-        margin: 30px 0;[m
+[31m-      }[m
+[31m-[m
+[31m-      .social-media a{[m
+[31m-        font-size: 30px;[m
+[31m-        margin: 10px 10px;[m
+[31m-        color: black;[m
+[31m-        border-radius: 50px;[m
+[31m-      }[m
+[31m-[m
+[31m-      .social-media a:hover{[m
+[31m-        color: blue;[m
+[31m-      }[m
+[31m-[m
+[31m-      /* Image Style */[m
+[31m-      .images img{[m
+[31m-        width: 100%;[m
+[31m-        height: 250px;[m
+[31m-        margin: auto;[m
+[31m-        display: block;[m
+[31m-        [m
+[31m-      }[m
+[31m-[m
+[31m-      /* Identitas Style */[m
+[31m-    .identity > p,[m
+[31m-    .identity > h1 {[m
+[31m-    text-align: center;[m
+[31m-      }[m
+[31m-[m
+[31m-    .identity > h1{[m
+[31m-      font-size: 21px;[m
+[31m-        [m
+[31m-    }[m
+[32m+[m[32m    <link rel="stylesheet" href="css/homeProfile.css">[m
+[32m+[m[32m    <link rel="stylesheet" href="css/navbar.css">[m
+[32m+[m[32m  </head>[m
+[32m+[m[32m  <body>[m
+ [m
+[31m-    .identity > p{[m
+[31m-      font-size: 15px;[m
+[32m+[m[32m    <header>[m
+[32m+[m[32m      <nav class="nav-menu">[m
+[32m+[m[32m        <a href="index.html"><img src="assets/img/logo.png" alt=""></a>[m
+[32m+[m[32m        <ul>[m
+[32m+[m[32m          <li><a href="">Home</a></li>[m
+[32m+[m[32m          <li><a href="">Blog</a></li>[m
+[32m+[m[32m        </ul>[m
+[32m+[m[32m      </nav>[m
+[32m+[m[32m      <a class="nav-button" href="">Contact Me</a>[m
+[32m+[m[32m    </header>[m
+[32m+[m
+[32m+[m[32m  <section class="container-main">[m
+[32m+[m[32m    <section class="container">[m
+[32m+[m[32m      <aside class="container-desctiption">[m
+[32m+[m[32m        <h1 class="title">HI''  Welcome to my Profile 🙌</h1>[m
+[32m+[m[32m        <p class="description">[m
+[32m+[m[32m          Saya I Nyoman Purbawa adalah seorang calon Full Stack Developer yang[m
+[32m+[m[32m          berkomitmen untuk menciptakan solusi teknologi inovatif dan memberikan[m
+[32m+[m[32m          dampak positif melalui pengembangan perangkat lunak. Dengan latar[m
+[32m+[m[32m          belakang pendidikan di bidang Teknik Informatika dan pengalaman langsung[m
+[32m+[m[32m     
