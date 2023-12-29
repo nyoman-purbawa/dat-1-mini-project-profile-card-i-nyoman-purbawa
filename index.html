@@ -1,6 +1,8 @@
+<!DOCTYPE html>
 <html>
   <head>
-    
+
+    <!-- Font Awsome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -9,156 +11,80 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,400&family=Quicksand:wght@300;600;700&family=Righteous&display=swap" rel="stylesheet">
 
-    <style>
-
-        /* Body */
-        body{
-            font-family: 'Poppins', sans-serif;
-            background-color: gainsboro;
-        }
-
-        /* Container */
-      .container {
-        width: 600px;
-        box-shadow: 0px 0px 6px 0px rgb(44, 43, 43);
-        padding: 30px 100px;
-        margin: 30px auto;
-        border-radius: 10px;
-        background-color: wheat;
-
-      }
-
-      .title{
-        font-size: 30px;
-      }
-
-      .description{
-        font-size: 15px;
-      }
-
-      p{
-        text-align: justify;
-      }
-
-
-      /* Social Media Style */
-      .social-media{
-        text-align: center;
-        margin: 30px 0;
-      }
-
-      .social-media a{
-        font-size: 30px;
-        margin: 10px 10px;
-        color: black;
-        border-radius: 50px;
-      }
-
-      .social-media a:hover{
-        color: blue;
-      }
-
-      /* Image Style */
-      .images img{
-        width: 100%;
-        height: 250px;
-        margin: auto;
-        display: block;
-        
-      }
-
-      /* Identitas Style */
-    .identity > p,
-    .identity > h1 {
-    text-align: center;
-      }
-
-    .identity > h1{
-      font-size: 21px;
-        
-    }
-
-    .identity > p{
-      font-size: 15px;
-        
-    }
-
-    .identity{
-        margin: 10px;
-    }
-
-    /* Contact Style */
-    .contact > a{
-        background-color: gray;
-        padding: 10px 40px;
-        border-radius: 20px;
-        color: white;
-        text-decoration: none;
-      
-    }
-
-    .contact{
-        margin: 20px 0;
-    }
-    
-    .card{
-        background-color: rgb(224, 219, 210);
-        box-shadow: 0 0 5px  rgb(43, 41, 41);
-        width: 300px;
-        height: 350px;
-        display: block;
-        text-align: center;
-        margin: 0 auto;
-        border-radius: 10px;
-        overflow: hidden;
-    }
-
-
-   
-    </style>
+    <!-- Link Style Css -->
+    <link rel="stylesheet" href="css/homeProfile.css">
+    <link rel="stylesheet" href="css/navbar.css">
   </head>
   <body>
-    <div class="container">
-      <h1 class="title">HI''  Welcome to my Profile 🙌</h1>
-      <p class="description">
-        Saya I Nyoman Purbawa adalah seorang calon Full Stack Developer yang
-        berkomitmen untuk menciptakan solusi teknologi inovatif dan memberikan
-        dampak positif melalui pengembangan perangkat lunak. Dengan latar
-        belakang pendidikan di bidang Teknik Informatika dan pengalaman langsung
-        di dunia pengembangan web, saya membawa keterampilan yang luas dan
-        dedikasi untuk mencapai tujuan teknis dan bisnis.
-      </p>
 
-      <div class="contact">
-        <a href="">Contact</a>
-      </div>
-  
-      <div class="download-cv">
-        <a href="assets/img/cv.jpg" target="_blank">Download CV <i class="fa-solid fa-download"></i></a>
-      </div>
-      
+    <!-- Header -->
+    <header>
+      <!-- Navigasi -->
+      <nav class="nav-menu">
+        <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </nav>
+      <!-- Button -->
+      <a class="nav-button" href="contactPage.html">Contact Me</a>
+    </header>
 
-      <div class="social-media">
-        <a href="https://www.linkedin.com/in/i-nyoman-purbawa-b506b22a0/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></a>
-        <a href="https://www.instagram.com/napoleeonbonaparte_" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-        <a href=""><i class="fa-brands fa-facebook"></i></a>
-        <a href=""><i class="fa-brands fa-twitter"></i></a>
-      </div>
-    <div class="card">
+    <!-- Content -->
+  <section class="container-main">
+    <!-- Container -->
+    <section class="container">
+      <!-- Container Deskripsi -->
+      <aside class="container-desctiption">
+        <h1 class="title">HI''  Welcome to my Profile 🙌</h1>
+        <p class="description">
+          Saya I Nyoman Purbawa adalah seorang calon Full Stack Developer yang
+          berkomitmen untuk menciptakan solusi teknologi inovatif dan memberikan
+          dampak positif melalui pengembangan perangkat lunak. Dengan latar
+          belakang pendidikan di bidang Teknik Informatika dan pengalaman langsung
+          di dunia pengembangan web, saya membawa keterampilan yang luas dan
+          dedikasi untuk mencapai tujuan teknis dan bisnis.
+        </p>
         
+        <!-- Contact -->
+        <div class="contact">
+          <a href="contactPage.html">Contact</a>
+        </div>
+    
+        <!-- Download CV -->
+        <div class="download-cv">
+          <a href="assets/img/cv.jpg" target="_blank">Download CV <i class="fa-solid fa-download"></i></a>
+        </div>
+        
+  
+        <!-- Social Media -->
+        <div class="social-media">
+          <a href="https://www.linkedin.com/in/i-nyoman-purbawa-b506b22a0/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></a>
+          <a href="https://www.instagram.com/napoleeonbonaparte_" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </aside>
+
+
+      <!-- Card Profile -->
+    <aside class="card">
+      <!-- Images Profile -->
       <div class="images">
         <img src="assets/img/images.jpg" alt="">
       </div>
 
+      <!-- Identitas Profile -->
       <div class="identity">
         <h1>I Nyoman Purbawa</h1>
         <p>FullStack Developer</p>
       </div>
-    
-    </div>
-     
-    </div>
+    </aside>
+    </section>
+  </section>
   </body>
 </html>
