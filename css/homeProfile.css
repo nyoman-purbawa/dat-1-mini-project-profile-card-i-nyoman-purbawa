@@ -1,4 +1,4 @@
-/* Clear All */
+/* flear All */
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +8,7 @@
 /* Body */
 body {
   font-family: "Poppins", sans-serif;
-  background-color: rgb(231, 218, 218);
+  background-color: #e3e7eb;
 }
 
 .container-main {
@@ -20,11 +20,12 @@ body {
 /* Container */
 .container {
   width: 85%;
-  box-shadow: 0px 0px 6px 0px rgb(44, 43, 43);
-  padding: 20px 100px;
+
+  box-shadow: 2px 2px 6px rgb(43, 41, 41);
+  padding: 4rem 100px;
   margin: 30px auto;
   border-radius: 10px;
-  background-color: white;
+  background-color: #fefefe;
   display: grid;
   grid-template-columns: 3fr 1fr;
   gap: 100px;
@@ -76,6 +77,10 @@ p {
   text-align: center;
 }
 
+.identity {
+  padding-top: 2.3rem;
+}
+
 .identity > h1 {
   font-size: 21px;
 }
@@ -90,11 +95,12 @@ p {
 
 /* Contact Style */
 .contact > a {
-  background-color: gray;
-  padding: 10px 40px;
-  border-radius: 20px;
+  background-color: #111727;
+  padding: 6px 40px;
+  border-radius: 5px;
   color: white;
   text-decoration: none;
+  box-shadow: 0 0 4px 0 black;
 }
 
 .contact {
@@ -102,13 +108,19 @@ p {
 }
 
 .card {
-  background-color: rgb(224, 219, 210);
+  background-color: rgb(248, 248, 248);
   box-shadow: 0 0 5px rgb(43, 41, 41);
   width: 300px;
-  height: 350px;
+
   display: block;
   text-align: center;
   margin: 0 auto;
   border-radius: 10px;
   overflow: hidden;
+}
+
+.information {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }

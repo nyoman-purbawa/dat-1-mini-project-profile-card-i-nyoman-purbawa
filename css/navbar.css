@@ -44,7 +44,8 @@ ul li a {
 .nav-button {
   text-decoration: none;
   padding: 5px 20px;
-  background-color: gray;
+  background-color: #111727;
+  box-shadow: 0 0 4px 0 black;
   border-radius: 10px;
   color: white;
 }
