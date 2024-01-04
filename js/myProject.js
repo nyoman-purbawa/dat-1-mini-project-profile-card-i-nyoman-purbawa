@@ -40,10 +40,30 @@ cardForm.addEventListener("submit", (event) => {
     }
   }
 
+  // Date
+  let inputStartDate = new Date(startDateInput);
+  let inputEndDate = new Date(endDateInput);
+
+  const oneDay = 24 * 60 * 60 * 1000;
+  const day = Math.round(Math.abs((inputStartDate - inputEndDate) / oneDay));
+  const month = Math.round(day / 30);
+  const years = Math.round(month / 12);
+
+  let days = [];
+
+  if (day < 30) {
+    days.push(`durasi: ${day} Hari`);
+  } else if (month < 12) {
+    days.push(`durasi: ${month} Bulan`);
+  } else {
+    days.push(`durasi: ${years} Tahun`);
+  }
+
+  console.log(days);
+
   let inputData = {
     projectNameInput,
-    startDateInput,
-    endDateInput,
+    days,
     descriptionsInput,
     tech,
     images,
@@ -72,7 +92,7 @@ function showMyProject() {
 
         <div class="descriptions-card">
           <h1 style="font-size: 20px; margin: 10px 0 0 0">${projectShow[i].projectNameInput}</h1>
-          <p style="font-size: 12px; margin: 0 0 10px 0">${projectShow[i].startDateInput} - ${projectShow[i].endDateInput}</p>
+          <p style="font-size: 12px; margin: 0 0 10px 0">${projectShow[i].days}</p>
 
           <p class="" style="font-size: 15px; margin: 0 0 10px 0">${projectShow[i].descriptionsInput}</p>
           <div class="icon-tech">
