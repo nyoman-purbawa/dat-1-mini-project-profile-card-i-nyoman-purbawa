@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&family=Lemon&family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,400&family=Quicksand:wght@300;600;700&family=Righteous&family=Rubik+Scribble&display=swap");
+
 /* flear All */
 * {
   margin: 0;
@@ -14,13 +16,13 @@ body {
 .container-main {
   display: flex;
   align-items: center;
-  height: 90vh;
+  height: 100vh;
 }
 
 /* Container */
 .container {
-  width: 85%;
-
+  width: 100%;
+  max-width: 90%;
   box-shadow: 2px 2px 6px rgb(43, 41, 41);
   padding: 4rem 100px;
   margin: 30px auto;
@@ -30,6 +32,10 @@ body {
   grid-template-columns: 3fr 1fr;
   gap: 100px;
   align-items: center;
+}
+
+.contact-me {
+  display: none;
 }
 
 /* Container Deskription */
@@ -63,10 +69,36 @@ p {
   color: blue;
 }
 
+/* Social Media Card */
+.social-card {
+  margin: 30px 0;
+  display: none;
+}
+
+.social-card a {
+  font-size: 30px;
+  margin: 10px 10px;
+  color: black;
+  border-radius: 50px;
+}
+
+.social-card a:hover {
+  color: blue;
+}
+
+.information {
+  display: none;
+}
+
 /* Image Style */
+
 .images img {
   width: 100%;
-  height: 250px;
+  max-width: 100%;
+  /* min-width: 100%; */
+  max-height: 250px;
+  min-height: 100%;
+  height: 100%;
   margin: auto;
   display: block;
 }
@@ -107,11 +139,33 @@ p {
   margin: 40px 0 20px 0;
 }
 
+/* Contact Card  */
+.contact-card > a {
+  background-color: #111727;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 0 4px 0 black;
+  font-size: 1em;
+}
+
+.contact-cards {
+  margin: 40px 0 20px 0;
+}
+
+.download-cv-card a {
+  font-size: 0.8em;
+}
+
+.contact-cards {
+  margin: 40px 0 20px 0;
+}
+
 .card {
   background-color: rgb(248, 248, 248);
   box-shadow: 0 0 5px rgb(43, 41, 41);
   width: 300px;
-
   display: block;
   text-align: center;
   margin: 0 auto;
@@ -123,4 +177,467 @@ p {
   display: flex;
   align-items: center;
   gap: 2rem;
+}
+
+.detail-description {
+  display: none;
+}
+
+.information-card {
+  display: none;
+}
+
+/* Responsive Ke 1 */
+@media only screen and (min-width: 100px) and (max-width: 783px) {
+  .container-main {
+    display: flex;
+    align-items: center;
+    height: auto;
+  }
+
+  .contact-me {
+    display: block;
+  }
+  .contact-card > a {
+    background-color: #111727;
+    padding: 0.5rem 2rem;
+    box-shadow: 0 0 4px 0 black;
+    font-size: 0.8em;
+  }
+
+  .information-card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Title */
+  .title {
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    font-size: 1.5em;
+  }
+  .information-card {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .images img {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 700px;
+    min-height: 100%;
+    height: 100%;
+    margin: auto;
+    display: block;
+    object-fit: cover;
+  }
+
+  .container-main {
+    padding: 1rem;
+  }
+
+  /* Container Start */
+  .container {
+    width: 100%;
+    max-width: 100%;
+    box-shadow: 2px 2px 6px rgb(43, 41, 41);
+    padding: 1rem 1rem;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: #fefefe;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: center;
+  }
+  /* Container End */
+
+  /* Contact Start */
+  .contact {
+    display: none;
+  }
+  /* Contact End */
+
+  /* Information Start*/
+  .information {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+  /* Information End */
+
+  /* Cv Informataion Start */
+  .download-cv a {
+    display: none;
+  }
+  /* Cv Information End */
+
+  /* Social Media Start */
+  .social-media {
+    display: none;
+  }
+
+  /* Social Card */
+  .social-card {
+    margin: 30px 0;
+    display: block;
+  }
+
+  /* Social Card Start */
+  .social-card {
+    margin: 30px 0;
+    width: 100%;
+    max-width: 100%;
+    min-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .social-card a {
+    font-size: 1.6em;
+    margin: 10px 10px;
+    color: black;
+    border-radius: 50px;
+  }
+
+  .social-card a:hover {
+    color: blue;
+  }
+  /* Social Card End */
+
+  /* Card Container */
+  .card {
+    display: grid;
+
+    width: 100%;
+  }
+
+  /* Identity */
+  .identity {
+    padding: 1rem;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  /* Detail Description */
+  .description {
+    display: none;
+  }
+  .detail-description {
+    display: block;
+    font-size: 0.9em;
+  }
+}
+
+/* Responsive ke 2 */
+@media only screen and (min-width: 458px) and (max-width: 764px) {
+  .container-main {
+    display: flex;
+    align-items: center;
+    height: auto;
+  }
+
+  .contact-me {
+    display: block;
+  }
+
+  .information-card {
+    display: flex;
+    justify-content: center;
+  }
+  .contact-card > a {
+    font-size: 1.2em;
+  }
+
+  .download-cv-card a {
+    font-size: 1.2em;
+  }
+
+  /* Title */
+  .title {
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+  }
+  .information-card {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .images img {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 700px;
+    min-height: 100%;
+    height: 100%;
+    margin: auto;
+    display: block;
+    object-fit: cover;
+  }
+
+  .container-main {
+    padding: 1rem;
+  }
+
+  /* Container Start */
+  .container {
+    width: 100%;
+    max-width: 100%;
+    box-shadow: 2px 2px 6px rgb(43, 41, 41);
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: #fefefe;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: center;
+  }
+  /* Container End */
+
+  /* Contact Start */
+  .contact {
+    display: none;
+  }
+  /* Contact End */
+
+  /* Information Start*/
+  .information {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+  /* Information End */
+
+  /* Cv Informataion Start */
+  .download-cv a {
+    display: none;
+  }
+  /* Cv Information End */
+
+  /* Social Media Start */
+  .social-media {
+    display: none;
+  }
+
+  /* Social Card */
+  .social-card {
+    margin: 30px 0;
+    display: block;
+  }
+
+  /* Social Card Start */
+  .social-card {
+    margin: 30px 0;
+    width: 100%;
+    max-width: 100%;
+    min-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .social-card a {
+    font-size: 1.6em;
+    margin: 10px 10px;
+    color: black;
+    border-radius: 50px;
+  }
+
+  .social-card a:hover {
+    color: blue;
+  }
+  /* Social Card End */
+
+  /* Card Container */
+  .card {
+    display: grid;
+
+    width: 100%;
+  }
+
+  /* Identity */
+  .identity {
+    padding: 1rem;
+  }
+
+  .identity h1 {
+    font-size: 2rem;
+  }
+  .identity p {
+    font-size: 1.4em;
+  }
+
+  .social-card a {
+    font-size: 2rem;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  /* Detail Description */
+  .description {
+    display: none;
+  }
+  .detail-description {
+    display: block;
+  }
+
+  .information-card .contact-card a,
+  .download-cv-card a {
+    font-size: 1.1em;
+  }
+}
+
+/* Responsive Ke 3 */
+@media only screen and (min-width: 765px) and (max-width: 1038px) {
+  .contact-card > a {
+    background-color: #111727;
+    padding: 0.5rem 2rem;
+    box-shadow: 0 0 4px 0 black;
+    font-size: 0.8em;
+  }
+
+  .contact-me {
+    display: block;
+  }
+
+  .information-card {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  /* Title */
+  .title {
+    margin: 0 0 3rem 0;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .images img {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 250px;
+    min-height: 100%;
+    height: 100%;
+    margin: auto;
+    display: block;
+    object-fit: cover;
+  }
+
+  /* Container Start */
+  .container {
+    width: 100%;
+    max-width: 100%;
+    box-shadow: 2px 2px 6px rgb(43, 41, 41);
+    padding: 2rem 3rem;
+    margin: 10px auto;
+    border-radius: 10px;
+    background-color: #fefefe;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    align-items: center;
+    height: 40rem;
+  }
+  /* Container End */
+
+  .container-main {
+    padding: 2rem;
+  }
+
+  /* Contact Start */
+  .contact {
+    display: none;
+  }
+  /* Contact End */
+
+  /* Information Start*/
+  .information-card {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+  }
+  /* Information End */
+
+  /* Cv Informataion Start */
+  .download-cv a {
+    display: none;
+  }
+  /* Cv Information End */
+
+  /* Social Media Start */
+  .social-media {
+    display: none;
+  }
+
+  /* Social Card */
+  .social-card {
+    margin: 30px 0;
+    display: block;
+  }
+
+  /* Social Card Start */
+  .social-card {
+    margin: 30px 0;
+    width: 100%;
+    max-width: 100%;
+    min-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .social-card a {
+    font-size: 2em;
+    margin: 10px 10px;
+    color: black;
+    border-radius: 50px;
+  }
+
+  .social-card a:hover {
+    color: blue;
+  }
+  /* Social Card End */
+
+  /* Card Container */
+  .card {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    width: 100%;
+    height: 100%;
+  }
+
+  .identity h1 {
+    font-size: 1.5rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+  }
+
+  .identity p {
+    font-size: 1rem;
+  }
+
+  /* Identity */
+  .identity {
+    padding: 3rem 0 2rem;
+  }
+}
+
+.nav-menu .navbar-item li:nth-child(1) {
+  background-color: orange;
 }

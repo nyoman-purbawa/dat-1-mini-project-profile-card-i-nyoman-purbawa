@@ -21,8 +21,8 @@
 
 .img-detail img {
   width: 700px;
-  height: 400px;
-  object-fit: cover;
+
+  /* object-fit: cover; */
 }
 
 /* .info-detail {
@@ -78,4 +78,34 @@ h1 {
 
 .descriptions {
   text-align: justify;
+}
+
+/* Responsive 1 */
+@media only screen and (min-width: 200px) and (max-width: 1036px) {
+  .tech {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: start;
+  }
+
+  .info-tech {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .img-detail img {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .container {
+    padding: 2rem 2rem;
+  }
+}
+
+.nav-menu .navbar-item li:nth-child(4) {
+  background-color: orange;
 }

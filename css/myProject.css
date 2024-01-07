@@ -118,7 +118,7 @@ span {
 }
 
 .card-project {
-  width: 20rem;
+  width: 100%;
   box-shadow: 0 0 10px 0 black;
   border-radius: 10px;
   padding: 10px;
@@ -131,12 +131,11 @@ span {
 .list-project-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-
   gap: 10px;
   justify-content: start;
-  width: 100%;
-  padding: 0 6rem;
+  padding: 0 4rem 3rem;
   flex-direction: column;
+  width: 100%;
 }
 
 .button-card {
@@ -225,4 +224,90 @@ span {
 
 .container-title {
   padding: 2rem 0;
+}
+
+/* Responsive Desain */
+@media only screen and (max-width: 700px) {
+  .date {
+    grid-template-columns: 1fr;
+  }
+
+  .checkbox {
+    flex-wrap: wrap;
+  }
+
+  span {
+    margin: 8px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8em;
+  }
+
+  .input-style {
+    box-shadow: 0 0 4px black;
+    padding: 4px;
+    border-radius: 4px;
+    border: none;
+  }
+
+  .form-container {
+    padding: 2rem 0;
+  }
+
+  #descriptions {
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 60%;
+    width: 100%;
+    height: 5rem;
+  }
+
+  .button-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 1036px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+  }
+
+  /* Container Form */
+  .form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 -2px 10px black;
+    background-color: #e3e7eb;
+    padding: 5rem 0;
+  }
+
+  .list-project-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 10px;
+    justify-content: start;
+    width: 100%;
+    padding: 0 2rem 3rem;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .card-project {
+    width: 100%;
+    max-width: 80%;
+    min-width: 80%;
+  }
+}
+
+.nav-menu .navbar-item li:nth-child(2) {
+  background-color: orange;
 }

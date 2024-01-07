@@ -11,11 +11,14 @@ header {
   box-shadow: 0 0 3px 0 rgb(44, 42, 42);
   display: flex;
   justify-content: space-between;
-  height: 76px;
+  height: 5rem;
   align-items: center;
   background-color: white;
   position: relative;
   z-index: 100;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
 }
 
 /* Nav Menu */
@@ -48,4 +51,242 @@ ul li a {
   box-shadow: 0 0 4px 0 black;
   border-radius: 10px;
   color: white;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+  display: none;
+}
+
+.contact-me {
+  display: none;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+  /* Header Start */
+  header {
+    padding: 20px 2rem;
+    box-shadow: 0 0 3px 0 rgb(44, 42, 42);
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center;
+    background-color: white;
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+  /* Header End */
+
+  .contact-me {
+    display: block;
+  }
+
+  .list-menu {
+    display: none;
+  }
+
+  @keyframes growDown {
+    0% {
+      transform: scaleY(0);
+    }
+    80% {
+      transform: scaleY(1.1);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
+
+  /* Navbar Menu Start */
+  .navbar-item {
+    display: flex;
+    position: absolute;
+    top: 5.1rem;
+    width: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    text-align: center;
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+  }
+
+  .navbar-item li {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    padding: 1rem;
+    background-color: #e3e7eb;
+    /* box-shadow: 0 1px 4px black; */
+    border-bottom: 1px solid gray;
+  }
+
+  .navbar-item li a {
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .navbar-item li:nth-child(2) {
+    text-decoration: none;
+    color: black;
+    position: relative;
+  }
+  /* Navbar Menu End */
+
+  /* Nav Button */
+  .nav-button {
+    display: none;
+  }
+
+  /* Hamburger Menu Responsive */
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger-menu .fa-bars {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1038px) {
+  /* Header Start */
+  header {
+    padding: 20px 100px;
+    box-shadow: 0 0 3px 0 rgb(44, 42, 42);
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center;
+    background-color: white;
+    position: relative;
+    z-index: 100;
+  }
+  /* Header End */
+  .contact-me {
+    display: block;
+  }
+
+  .list-menu {
+    display: none;
+  }
+
+  @keyframes growDown {
+    0% {
+      transform: scaleY(0);
+    }
+    80% {
+      transform: scaleY(1.1);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
+
+  /* Navbar Menu Start */
+  .nav-menu .navbar-item {
+    display: flex;
+    position: absolute;
+    top: 5.1rem;
+    width: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    text-align: center;
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+  }
+
+  .nav-menu .navbar-item li {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    padding: 1rem;
+    background-color: #e3e7eb;
+    /* box-shadow: 0 1px 4px black; */
+    border-bottom: 1px solid gray;
+  }
+
+  .nav-menu .navbar-item li a {
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .nav-menu .navbar-item li:nth-child(2) {
+    text-decoration: none;
+    color: black;
+    position: relative;
+  }
+  /* Navbar Menu End */
+
+  /* Nav Button */
+  .nav-button {
+    display: none;
+  }
+
+  /* Hamburger Menu Responsive */
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger-menu .fa-bars {
+    font-size: 1.5rem;
+  }
+}
+
+/* Media query untuk layar berukuran besar (misalnya, desktop) */
+@media only screen and (min-width: 1024px) {
+  /* Header */
+  header {
+    padding: 20px 100px;
+    box-shadow: 0 0 3px 0 rgb(44, 42, 42);
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center;
+    background-color: white;
+    position: relative;
+    z-index: 100;
+  }
+
+  /* Nav Menu */
+  .nav-menu {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+  }
+
+  .nav-menu a img {
+    width: 100%;
+    max-width: 50px;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  /* Nav Button */
+  .nav-button {
+    text-decoration: none;
+    padding: 5px 20px;
+    background-color: #111727;
+    box-shadow: 0 0 4px 0 black;
+    border-radius: 10px;
+    color: white;
+  }
 }
