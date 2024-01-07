@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
     <!-- Font Awsome -->
     <link
       rel="stylesheet"
@@ -20,8 +20,10 @@
     />
 
     <!-- Link Style Css -->
-    <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/testimoney.css" />
+
+    <title>Home</title>
   </head>
   <body>
     <!-- Header -->
@@ -48,43 +50,32 @@
       </div>
     </header>
 
-    <!-- Container -->
-    <section class="container">
-      <!-- Container Card -->
-      <section class="card-contact">
-        <h2>Contact Me</h2>
-        <form action="" class="form">
-          <!-- Name -->
-          <label for="name">Name</label>
-          <input type="text" id="name" />
+    <section class="container-main">
+      <div class="container">
+        <h1 class="testy-title">TestiMoney</h1>
 
-          <!-- Email -->
-          <label for="email">Email</label>
-          <input type="email" id="email" />
+        <div class="container-card">
+          <div class="card">
+            <div class="images">
+              <img src="assets/img/images.jpg" alt="" />
 
-          <!-- Phone Number -->
-          <label for="number">Number Phone</label>
-          <input type="text" id="number" />
+              <p class="testy">
+                Lorem ipsum dolor sit amet. Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit. Sunt consectetur labore minus quas
+              </p>
 
-          <!-- Subject -->
-          <label for="subject">Subject</label>
-          <select name="subject" id="subject">
-            <option value="frontend">FrontEnd</option>
-            <option value="backend">BackEnd</option>
-            <option value="fullStack">FullStack</option>
-          </select>
+              <div class="penulis">
+                <p>~ Nama</p>
+              </div>
+            </div>
+          </div>
 
-          <!-- Massage -->
-          <label for="massage">Your Massage</label>
-          <textarea name="massage" id="massage"></textarea>
-        </form>
-        <!-- Button Submit -->
-        <div class="button-container">
-          <button class="btn" id="button">Submit</button>
+          <!-- End -->
         </div>
-      </section>
+      </div>
     </section>
+
     <script src="js/navbar.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/testimoney.js"></script>
   </body>
 </html>

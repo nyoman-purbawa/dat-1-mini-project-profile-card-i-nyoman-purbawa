@@ -15,7 +15,14 @@ cardForm.addEventListener("submit", (event) => {
   let arrayTechInput = Array.from(technologiInput);
 
   // Condition Jika Form Kosong
-  if (projectNameInput === "" || startDateInput === "" || endDateInput === "" || descriptionsInput === "" || technologiInput === "" || images.length === 0) {
+  if (
+    projectNameInput === "" ||
+    startDateInput === "" ||
+    endDateInput === "" ||
+    descriptionsInput === "" ||
+    technologiInput === "" ||
+    images.length === 0
+  ) {
     alert("Form Tidak Boleh Kosong");
     return;
   }
@@ -45,7 +52,8 @@ cardForm.addEventListener("submit", (event) => {
   let inputEndDate = new Date(endDateInput);
 
   const oneDay = 24 * 60 * 60 * 1000;
-  const day = Math.round(Math.abs((inputStartDate - inputEndDate) / oneDay));
+  const day = Math.round(Math.abs(inputStartDate - inputEndDate) / oneDay);
+  console.log(day);
   const month = Math.round(day / 30);
   const years = Math.round(month / 12);
 
@@ -59,7 +67,7 @@ cardForm.addEventListener("submit", (event) => {
     days.push(`durasi: ${years} Tahun`);
   }
 
-  console.log(days);
+  // console.log(days);
 
   let inputData = {
     projectNameInput,
@@ -92,7 +100,7 @@ function showMyProject() {
 
         <div class="descriptions-card">
           <h1 style="font-size: 20px; margin: 10px 0 0 0">${projectShow[i].projectNameInput}</h1>
-          <p style="font-size: 12px; margin: 0 0 10px 0">${projectShow[i].days}</p>
+          <p style="font-size: 12px; margin: 0 0 10px 0">  ${projectShow[i].days}</p>
 
           <p class="" style="font-size: 15px; margin: 0 0 10px 0">${projectShow[i].descriptionsInput}</p>
           <div class="icon-tech">
@@ -112,7 +120,9 @@ function showMyProject() {
       `;
   }
 
-  document.querySelector(".container-title").innerHTML = `<h1 style="text-align: center;">MY PROJECT</h1>`;
+  document.querySelector(
+    ".container-title"
+  ).innerHTML = `<h1 style="text-align: center;">MY PROJECT</h1>`;
 
   document.querySelector(".list-project-container").innerHTML = htmlInner;
 
